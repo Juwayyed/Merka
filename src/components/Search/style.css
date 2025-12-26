@@ -1,0 +1,8 @@
+.searchBox input {
+  padding-left: 16px !important;
+}
+
+.searchBox input::placeholder {
+  color: rgba(55, 55, 55, 0.582) !important;
+  font-weight: 500;
+}
