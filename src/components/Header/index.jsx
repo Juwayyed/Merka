@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "../Search";
+import Navigation from "./Navigation";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
@@ -21,8 +22,8 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Header = () => {
   return (
-    <header>
-      <div className="top-banner pb-[20px] border-gray-200 border-b border-black/10">
+    <header className="bg-white">
+      <div className="top-banner pb-[20px] border-b border-black/10">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="col1 w-[50%]">
@@ -54,7 +55,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="header py-3">
+      <div className="header py-4 pb-[20px] border-b border-black/10">
         <div className="container flex items-center justify-between">
           <div className="col1 w-[15%]">
             <Link to={"/"}>
@@ -114,6 +115,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Navigation />
     </header>
   );
 };
