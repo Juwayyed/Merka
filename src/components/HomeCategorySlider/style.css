@@ -1,0 +1,45 @@
+.homeCategorySlider {
+  padding: 0;
+}
+
+.homeCategorySlider .swiper-button-prev,
+.homeCategorySlider .swiper-button-next {
+  background-color: white !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeCategorySlider .swiper-button-prev::after,
+.homeCategorySlider .swiper-button-next::after {
+  background-image: none !important;
+  font-size: 18px !important;
+  width: auto !important;
+  height: auto !important;
+  min-width: unset !important;
+  max-width: unset !important;
+  flex: 0 0 auto !important;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.homeCategorySlider .swiper-button-prev svg,
+.homeCategorySlider .swiper-button-next svg {
+  width: 18px !important;
+  height: 18px !important;
+  object-fit: contain !important;
+}
+
+.homeCategorySlider .swiper-button-prev:hover,
+.homeCategorySlider .swiper-button-next:hover {
+  background-color: #ff5252 !important;
+}
+
+.homeCategorySlider .item:hover img {
+  transform: scale(1.05);
+}

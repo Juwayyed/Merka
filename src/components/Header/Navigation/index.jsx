@@ -13,12 +13,12 @@ const Navigation = () => {
   };
   return (
     <>
-      <nav className="py-2">
-        <div className="container flex items-center justify-end gap-8">
-          <div className="col_1 w-20%">
+      <nav className="py-2!">
+        <div className="container flex items-center justify-end gap-6">
+          <div className="col_1 w-25%">
             <Button
               sx={{ color: "#000" }}
-              className="gap-2 justify-items-start"
+              className="gap-1 justify-items-start"
               onClick={openCategoryPanel}
             >
               <RiMenu2Fill className="text-[18px] ml-auto font-bold" />
@@ -26,7 +26,7 @@ const Navigation = () => {
               <LiaAngleDownSolid className="text-[18px] cursor-pointer" />
             </Button>
           </div>
-          <div className="col_2 w-60%">
+          <div className="col_2 w-55%">
             <ul className="flex justify-items-start items-start gap-1 nav">
               <li className="list-none">
                 <Link to="/" className="link transition text-[14px] font-[500]">
@@ -56,7 +56,7 @@ const Navigation = () => {
                   </Button>
                 </Link>
 
-                <div className="submenu absolute top-[120%] opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:top-[100%] group-hover:visible group-focus-within:opacity-100 group-focus-within:visible group-hover:pointer-events-auto transition-all duration-200 left-[0%] min-w-[150px] bg-white shadow-md">
+                <div className="submenu z-1000 absolute top-[120%] opacity-0 invisible pointer-events-none group-hover:opacity-100 group-hover:top-[100%] group-hover:visible group-focus-within:opacity-100 group-focus-within:visible group-hover:pointer-events-auto transition-all duration-200 left-[0%] min-w-[150px] bg-white shadow-md">
                   <ul>
                     <li className="list-none w-full relative group/men">
                       <Link to="/" className="w-full">
@@ -498,7 +498,7 @@ const Navigation = () => {
               </li>
             </ul>
           </div>
-          <div className="col_2 flex justify-end items-center gap-3 w-[20%] ml-[10px]!">
+          <div className="col_3 flex justify-end items-center gap-3 w-[20%] ml-[10px]!">
             <LiaShippingFastSolid className="font-[500]" />
             <p className="text-[14px] font-[500]">
               Free International Delivery
