@@ -1,11 +1,10 @@
 import HomeSlider from "../../components/HomeSlider";
 import HomeCategorySlider from "../../components/HomeCategorySlider";
 import AdsBannerSlider from "../../components/AdsBannerSlider";
+import ProductsSlider from "../../components/productsSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
-
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import { useState } from "react";
 
 const Home = () => {
@@ -33,14 +32,14 @@ const Home = () => {
 
       <section className="bg-white py-8!">
         <div className="container-fluid">
-          <div className="flex items-center justify-between">
-            <div className="leftSec">
+          <div className="flex items-center justify-between px-16!">
+            <div className="leftSec col1 w-[35%]">
               <h2 className="text-[20px]! font-[600]!">Popular Products</h2>
               <p className="text-[14px]!">
                 Do Not Miss The Current Offers till The End of The Month!
               </p>
             </div>
-            <div className="rightSec w-[70%]">
+            <div className="rightSec col2 w-[65%]">
               <Tabs
                 value={value}
                 onChange={handleChange}
@@ -54,10 +53,12 @@ const Home = () => {
               </Tabs>
             </div>
           </div>
+
+          <ProductsSlider items={5} />
         </div>
       </section>
 
-      <section className="!py-16 bg-white">
+      <section className="!py-8 bg-white">
         <div className="container">
           <div className="freeShipping w-full p-4! py-4! border-2 border-[#ff5252] mb-5! flex items-center justify-between rounded-md! ">
             <div className="col1 flex items-center gap-4 pl-2">
